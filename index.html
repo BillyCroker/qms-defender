@@ -6,26 +6,48 @@
     <title>QMS Dashboard - Defender Tubular Services</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             text-align: center;
-            padding: 40px;
-            background: #f8f9fa;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
             color: #333;
+            margin: 0;
         }
-        h1 { color: #1a73e8; margin-bottom: 10px; }
-        h2 { color: #f4b400; }
-        button {
-            padding: 15px 30px;
-            margin: 10px;
+        h1 {
+            color: #1a73e8;
+            margin-bottom: 8px;
+        }
+        h2 {
+            color: #f4b400;
+            margin: 40px 0 15px;
+        }
+        .button {
+            display: inline-block;
+            padding: 16px 32px;
+            margin: 12px;
             font-size: 18px;
-            border-radius: 8px;
+            font-weight: 600;
+            border-radius: 12px;
             border: none;
             background: #1a73e8;
             color: white;
             cursor: pointer;
+            transition: all 0.3s;
+            min-width: 280px;
         }
-        button:hover { background: #1557b0; }
-        .section { margin: 40px 0; }
+        .button:hover {
+            background: #1557b0;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+        .section {
+            margin: 50px 0;
+        }
+        .note {
+            margin-top: 60px;
+            color: #666;
+            font-size: 15px;
+        }
     </style>
 </head>
 <body>
@@ -34,22 +56,40 @@
 
     <div class="section">
         <h2>Quality Policy</h2>
-        <button onclick="alert('Opening Quality Policy... (Full feature coming soon)')">Open Quality Policy</button>
+        <button class="button" onclick="alert('Opening Quality Policy... (Full feature coming soon)')">
+            Open Quality Policy
+        </button>
     </div>
 
     <div class="section">
         <h2>Tier Levels</h2>
-        <button onclick="alert('Tier browsing coming soon...')">Browse Tiers</button>
+        <button class="button" onclick="alert('Opening Tier Levels... (Full navigation coming soon)')">
+            Browse Tiers
+        </button>
     </div>
 
     <div class="section">
         <h2>Additional Sections</h2>
-        <button onclick="alert('Calibration, Vendors, KPIs, Training - Coming soon...')">Open Additional Sections</button>
+        <button class="button" onclick="alert('Opening Additional Sections...\n\nCalibration, Vendors, KPIs, Training - Coming soon')">
+            Open Additional Sections
+        </button>
     </div>
 
-    <p style="margin-top: 60px; color: #666;">
+    <div class="note">
         Created by IQAS LLC<br>
-        <small>Contact us for support or full desktop version</small>
-    </p>
+        <small>Contact us for support or the full desktop version</small>
+    </div>
+
+    <script>
+        // Simple password protection example (for future Settings)
+        function openSettings() {
+            const pass = prompt("Enter Settings Password:");
+            if (pass === "iqas2026") {
+                alert("Settings opened! (Full feature coming soon)");
+            } else {
+                alert("Incorrect password");
+            }
+        }
+    </script>
 </body>
 </html>
