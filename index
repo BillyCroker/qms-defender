@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QMS Dashboard - Defender Tubular Services</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f8f9fa; }
+        h1 { color: #1a73e8; }
+        button { padding: 15px 30px; margin: 10px; font-size: 18px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <h1>Quality Management System</h1>
+    <h2 style="color:#f4b400;">Defender Tubular Services</h2>
+    
+    <p><strong>Quality Policy</strong></p>
+    <button onclick="alert('Quality Policy - Link coming soon')">Open Quality Policy</button>
+    
+    <p><strong>Tier Levels</strong></p>
+    <button onclick="alert('Tier browsing coming soon')">Browse Tiers</button>
+    
+    <p><strong>Additional Sections</strong></p>
+    <button onclick="alert('Additional sections coming soon')">Calibration, Vendors, KPIs, Training</button>
+    
+    <p style="margin-top: 50px; color: #666;">
+        Created by IQAS LLC<br>
+        <small>Contact for support</small>
+    </p>
+</body>
+</html>
