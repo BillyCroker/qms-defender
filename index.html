@@ -1,97 +1,55 @@
 <!DOCTYPE html>
-<!-- saved from url=(0023)http://127.0.0.1:65167/ -->
-<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!--<base href="/">--><base href=".">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QMS Dashboard - Defender Tubular Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+            background: #f8f9fa;
+            color: #333;
+        }
+        h1 { color: #1a73e8; margin-bottom: 10px; }
+        h2 { color: #f4b400; }
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            background: #1a73e8;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover { background: #1557b0; }
+        .section { margin: 40px 0; }
+    </style>
+</head>
+<body>
+    <h1>Quality Management System</h1>
+    <h2>Defender Tubular Services</h2>
 
-  
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Flet application.">
+    <div class="section">
+        <h2>Quality Policy</h2>
+        <button onclick="alert('Opening Quality Policy... (Full feature coming soon)')">Open Quality Policy</button>
+    </div>
 
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Flet">
-  <link rel="apple-touch-icon" href="http://127.0.0.1:65167/icons/apple-touch-icon-192.png">
+    <div class="section">
+        <h2>Tier Levels</h2>
+        <button onclick="alert('Tier browsing coming soon...')">Browse Tiers</button>
+    </div>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="http://127.0.0.1:65167/favicon.png">
+    <div class="section">
+        <h2>Additional Sections</h2>
+        <button onclick="alert('Calibration, Vendors, KPIs, Training - Coming soon...')">Open Additional Sections</button>
+    </div>
 
-  <title>QMS Dashboard - IQAS LLC</title>
-  <link rel="manifest" href="http://127.0.0.1:65167/manifest.json">
-
-  <script>
-    var flet = {
-      pyodide: false,
-      multiView: false,
-      noCdn: false,
-      webSocketEndpoint: "/ws",
-      entrypointBaseUrl: "/",
-      assetBase: "/",
-      routeUrlStrategy: "path",
-      canvasKitBaseUrl: "/canvaskit/",
-      pyodideUrl: "/pyodide/pyodide.js",
-      webRenderer: "auto",
-      fontFallbackBaseUrl: "assets/fonts/", // for Noto Emoji, use Google CDN
-      appPackageUrl: "app.tar.gz"
-    }
-
-    flet.flutterAppLoaded = new Promise((resolve) => {
-      flet.flutterAppResolve = resolve;
-    });
-
-    flet.flutterAppLoaded.then((flutterApp) => {
-      console.log("Flutter app loaded");
-      if (flet.multiView) {
-        console.log(flutterApp.addView({
-          hostElement: document.querySelector('#view-1'),
-          initialData: {
-            script: 'print("Hello from view 1")',
-            randomValue: Math.floor(Math.random() * 100),
-          },
-          viewConstraints: {
-            //maxWidth: Infinity,
-            maxHeight: Infinity,
-            minHeight: 300,
-            minWidth: 620
-          }
-        }));
-        console.log(flutterApp.addView({
-          hostElement: document.querySelector('#view-2'),
-          initialData: {
-            script: 'print("Hello from view 2")',
-            bar: "baz"
-          },
-          viewConstraints: {
-            minWidth: 620,
-            //maxWidth: 320,
-            //minHeight: 400,
-            maxHeight: 400,
-          }
-        }));
-      }
-    });
-  </script>
-
-  <script>
-flet.noCdn=false;
-flet.webRenderer="auto";
-flet.routeUrlStrategy="path";
-flet.entrypointBaseUrl="/";
-flet.assetBase="/";
-flet.webSocketEndpoint="ws";
-</script>
-
-  <script src="./QMS Dashboard - IQAS LLC_files/python.js.download"></script>
-<script type="text/javascript" charset="utf-8" async="" src="./QMS Dashboard - IQAS LLC_files/no_sleep.js.download"></script><meta name="generator" content="Flutter"><meta flt-viewport="" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><meta id="flutterweb-theme" name="theme-color" content="#725c0c"></head>
-
-<body flt-embedding="full-page" flt-renderer="skwasm" flt-build-mode="release" spellcheck="false" style="position: fixed; inset: 0px; overflow: hidden; padding: 0px; margin: 0px; user-select: none; touch-action: none;"><flt-semantics-placeholder role="button" aria-live="polite" tabindex="0" aria-label="Enable accessibility" style="position: absolute; left: -1px; top: -1px; width: 1px; height: 1px;"></flt-semantics-placeholder>
-  
-  <script src="./QMS Dashboard - IQAS LLC_files/flutter_bootstrap.js.download" async=""></script>
-
-  <!-- <h1>View 1</h1>
-  <div id="view-1" style="display: flex; justify-content: center;"></div>
-  <h1>View 2</h1>
-  <div id="view-2"></div> -->
-
-
-<p aria-hidden="true" style="position: fixed; bottom: 100%; visibility: hidden; opacity: 0; pointer-events: none; width: auto; height: auto; white-space: nowrap; line-height: 9999px; letter-spacing: 9999px; word-spacing: 9999px; margin: 0px 0px 9999px;">flutter typography measurement</p><flt-announcement-host><flt-announcement-polite aria-live="polite" style="position: fixed; overflow: hidden; transform: translate(-99999px, -99999px); width: 1px; height: 1px;"></flt-announcement-polite><flt-announcement-assertive aria-live="assertive" style="position: fixed; overflow: hidden; transform: translate(-99999px, -99999px); width: 1px; height: 1px;"></flt-announcement-assertive></flt-announcement-host><flutter-view flt-view-id="0" tabindex="-1" style="position: absolute; inset: 0px; width: 759.2px; height: 818.4px;"><flt-glass-pane><template shadowrootmode="open"><flt-scene-host style="pointer-events: none;"><flt-scene><flt-canvas-container><canvas aria-hidden="true" width="949" height="1023" style="position: absolute; width: 759.2px; height: 818.4px;"></canvas></flt-canvas-container></flt-scene></flt-scene-host><style id="flt-internals-stylesheet"> flt-scene-host {  font: normal normal 14.0px sans-serif;} flt-semantics input[type=range] {  appearance: none;  -webkit-appearance: none;  width: 100%;  position: absolute;  border: none;  top: 0;  right: 0;  bottom: 0;  left: 0;} input::selection {  background-color: transparent;} textarea::selection {  background-color: transparent;} flt-semantics input, flt-semantics textarea, flt-semantics [contentEditable="true"] {  caret-color: transparent;} .flt-text-editing::placeholder {  opacity: 0;}:focus { outline: rgb(0, 0, 0) none 0px;} .transparentTextEditing:-webkit-autofill, .transparentTextEditing:-webkit-autofill:hover, .transparentTextEditing:-webkit-autofill:focus, .transparentTextEditing:-webkit-autofill:active {  opacity: 0 !important;} input::-ms-reveal {  display: none;}</style></template></flt-glass-pane><flt-text-editing-host></flt-text-editing-host><flt-semantics-host style="position: absolute; transform-origin: 0px 0px 0px; transform: scale(0.8);"></flt-semantics-host><style id="flt-text-editing-stylesheet">flutter-view flt-scene-host {  font: normal normal 14.0px sans-serif;}flutter-view flt-semantics input[type=range] {  appearance: none;  -webkit-appearance: none;  width: 100%;  position: absolute;  border: none;  top: 0;  right: 0;  bottom: 0;  left: 0;}flutter-view input::selection {  background-color: transparent;}flutter-view textarea::selection {  background-color: transparent;}flutter-view flt-semantics input,flutter-view flt-semantics textarea,flutter-view flt-semantics [contentEditable="true"] {  caret-color: transparent;}flutter-view .flt-text-editing::placeholder {  opacity: 0;}flutter-view:focus { outline: rgb(0, 0, 0) none 0px;}flutter-view .transparentTextEditing:-webkit-autofill,flutter-view .transparentTextEditing:-webkit-autofill:hover,flutter-view .transparentTextEditing:-webkit-autofill:focus,flutter-view .transparentTextEditing:-webkit-autofill:active {  opacity: 0 !important;}flutter-view input::-ms-reveal {  display: none;}</style></flutter-view><script src="./QMS Dashboard - IQAS LLC_files/rive_native.js.download" type="application/javascript" defer=""></script></body></html>
+    <p style="margin-top: 60px; color: #666;">
+        Created by IQAS LLC<br>
+        <small>Contact us for support or full desktop version</small>
+    </p>
+</body>
+</html>
